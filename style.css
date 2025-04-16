@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    height: 100%;
+    width: 100%;
+}
+
+nav{
+    padding: .5rem 3rem !important;
+}
+
+.navbar-collapse{
+    margin-left: auto;
+}
+
+.logo{
+    width: 20%;
+}
+
+
+
+
+
+
+
+
+@media(max-width:425px){
+    nav{
+        padding: 0 !important;
+    }
+}
