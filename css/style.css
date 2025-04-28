@@ -14,7 +14,7 @@ header{
     width: 100%;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url(./images/bag-mockup.jpg);
+    background-image: url(../images/bag-mockup.jpg);
     background-size: cover;
     box-sizing: border-box;
 }
