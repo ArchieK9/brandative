@@ -1,0 +1,160 @@
+
+:root{
+    --blue-color: #002260;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    height: 35rem;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(./images/bag-mockup.jpg);
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+nav{
+    padding: 0rem !important;
+}
+
+.nav-link{
+    transition: .2s ease;
+    color: #fff !important;
+    font-weight: 500 !important;
+}
+
+.nav-link:hover{
+    color: var(--blue-color) !important;
+}
+
+.nav-item>button{
+    border: none !important;
+    border-radius: 5rem;
+    text-transform: uppercase;
+    background-color: var(--blue-color);
+    color: #fff !important;
+    transition: .3s ease;
+}
+
+.nav-item>button:hover{
+    background-color: #fff;
+    color: var(--blue-color);
+}
+
+.nav-item>button>.nav-link{
+    text-decoration: none;
+}
+
+.nav-link:hover{
+    text-decoration: underline;
+}
+
+.navbar-collapse{
+    margin-left: auto;
+}
+
+.navbar-brand{
+    width: 2.5rem;
+}
+
+.logo{
+    width: 100%;
+}
+
+.container{
+    display: flex !important; 
+    justify-content: space-between !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.navbar-collapse{
+    flex-grow: 0 !important;
+}
+
+.navbar-nav{
+    display: flex;
+    align-items: center;
+}
+
+.intro{
+    box-sizing: border-box;
+    width: 50%;
+    padding: .5rem;
+    border: solid .15rem #fff;
+}
+
+.intro>p{
+    /* color: var(--blue-color) !important; */
+    color: #fff !important;
+    font-size: 3rem;
+    font-weight: 900;
+}
+
+
+
+
+@media (max-width:768px) {
+    .intro{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+@media(max-width:425px){
+
+    nav{
+        padding: 0 !important;
+    }
+
+    .navbar-collapse{
+        background-color: var(--blue-color);
+    }
+
+    .navbar-nav{
+        align-items: start;
+    }
+
+    .nav-item{
+        margin: 0 1rem;
+    }
+
+    .nav-item:last-child{
+        margin: 0;
+    }
+
+    .slide-right {
+        position: fixed;
+        top: 0;
+        right: -250px;
+        height: 100%;
+        width: 250px;
+        background-color: var(--blue-color);
+        padding: 2rem 1rem;
+        transition: right 0.3s ease-in-out;
+        z-index: 1;
+    }
+    
+    .slide-right.show {
+        right: 0; 
+    }
+    
+
+    .container{
+        margin: 1rem !important;
+    }
+
+    .intro>p{
+        color: #fff !important;
+        font-size: 2rem;
+        font-weight: 500;
+    }
+}
