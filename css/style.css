@@ -33,7 +33,7 @@ nav{
     color: var(--blue-color) !important;
 }
 
-.nav-item>button{
+.nav-item>button, .brand-three>button{
     border: none !important;
     border-radius: 5rem;
     text-transform: uppercase;
@@ -42,12 +42,12 @@ nav{
     transition: .3s ease;
 }
 
-.nav-item>button:hover{
+.nav-item>button:hover, .brand-three>button:hover{
     background-color: #fff;
     color: var(--blue-color);
 }
 
-.nav-item>button>.nav-link{
+.nav-item>button>.nav-link, .brand-three>button>.nav-link{
     text-decoration: none;
 }
 
@@ -92,12 +92,36 @@ nav{
 }
 
 .intro>p{
-    /* color: var(--blue-color) !important; */
     color: #fff !important;
     font-size: 3rem;
     font-weight: 900;
 }
 
+aside{
+    height: 20rem;
+    width: 100%;
+}
+
+.brand-one, .brand-two, .brand-three{
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 1.5rem;
+}
+
+.brand-one{
+    background-image: url(../images/brand-card-one-p-500.jpg);
+    text-align: center;
+}
+
+.brand-two{
+    background-image: url(../images/brand-card-2.jpg);
+}
+
+.brand-three button:hover{
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);;
+}
 
 
 
